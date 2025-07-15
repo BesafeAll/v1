@@ -1,9 +1,9 @@
 export const siteDetails = {
-    siteName: 'Finwise',
-    siteUrl: 'https://finwise-omega.vercel.app/',
+    siteName: 'Besafe',
+    siteUrl: 'https://Besafe-omega.vercel.app/',
     metadata: {
-        title: 'Finwise - Next.js and Tailwind CSS Landing Page Template',
-        description: 'Finwise empowers businesses with cutting-edge technology solutions to drive success and efficiency.',
+        title: 'Besafe - Next.js and Tailwind CSS Landing Page Template',
+        description: 'Besafe empowers businesses with cutting-edge technology solutions to drive success and efficiency.',
     },
     language: 'en-us',
     locale: 'en-US',
