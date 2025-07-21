@@ -1,4 +1,21 @@
-import { FiBarChart2, FiBell, FiBookOpen, FiBriefcase, FiDollarSign, FiGift, FiLayout, FiLock, FiPieChart, FiRefreshCcw, FiShield, FiTarget, FiTrendingUp, FiUnlock, FiUser, FiUserX, FiWifiOff } from "react-icons/fi";
+import { 
+    // FiBarChart2, 
+    FiBell, 
+    FiBookOpen, 
+    // FiBriefcase, 
+    // FiDollarSign, 
+    FiGift, 
+    FiLayout, 
+    // FiLock, 
+    // FiPieChart, 
+    FiRefreshCcw, 
+    FiShield, 
+    // FiTarget, 
+    // FiTrendingUp, 
+    FiUnlock, 
+    // FiUser, 
+    FiUserX, 
+    FiWifiOff } from "react-icons/fi";
 
 import { IBenefit } from "@/types"
 const isProduction = process.env.NODE_ENV === "production";

@@ -19,7 +19,13 @@
 
 # misc
 .DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 *.pem
+*.log
 
 # debug
 npm-debug.log*
@@ -35,3 +41,18 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sw?
+
+# lock files (optional — choose one or both if you don't want them versioned)
+package-lock.json
+yarn.lock
+
+# JetBrains IDE project files
+*.iml
+
+# SASS cache
+.sass-cache
