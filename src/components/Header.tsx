@@ -9,6 +9,7 @@ import Container from './Container';
 import { siteDetails } from '@/data/siteDetails';
 import { menuItems } from '@/data/menuItems';
 import Image from 'next/image';
+const isProduction = process.env.NODE_ENV === "production";
 
 const Header: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -25,11 +26,12 @@ const Header: React.FC = () => {
                     <Link href="/" className="flex items-center gap-2">
                         {/* <FaFingerprint className="text-foreground min-w-fit w-7 h-7" /> */}
                         <Image
-                            src="/v1/images/logo.png"
+                            src= {isProduction? "/v1/images/logo.png" : "/images/logo.png"}
                             alt="Logo"
-                            width={40}
-                            height={40}
-                            className="h-10 w-10 rounded-full object-cover"
+                            width={30}
+                            height={20}
+                            objectFit='contain'
+                            className="h-8 w-auto  "
                             />
 
                         <span className="manrope text-xl font-semibold text-foreground cursor-pointer">
@@ -46,11 +48,11 @@ const Header: React.FC = () => {
                                 </Link>
                             </li>
                         ))}
-                        <li>
+                        {/* <li>
                             <Link href="#cta" className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors">
                                 Download
                             </Link>
-                        </li>
+                        </li> */}
                     </ul>
 
                     {/* Mobile Menu Button */}
